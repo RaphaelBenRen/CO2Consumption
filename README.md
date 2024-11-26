@@ -56,13 +56,18 @@ Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur 
    - Éco-score.
    - Alternatives proposées (si disponibles) pour un impact environnemental réduit.
 
-### Note importante :
-Le projet utilise l'API Open Food Facts, qui ne contient pas toutes les données pour tous les produits disponibles sur le marché. Par conséquent :
-- Certains produits ne seront pas reconnus ou afficheront des informations partielles.
-- Exemple de produit fonctionnant correctement : **Nutella**. Les informations environnementales comme l'éco-score et les alternatives sont correctement affichées pour ce produit.
-- Pour les produits moins courants ou récents, il est possible que l'API ne retourne aucune information.
+### Notes importantes :
 
-En cas d'absence de données, un message s'affichera pour indiquer que le produit est introuvable.
+1. **Compatibilité des produits** :
+   - Le projet utilise l'API Open Food Facts, qui ne contient pas toutes les données pour tous les produits.
+   - Certains produits ne seront pas reconnus ou afficheront des informations partielles.
+   - Exemple de produit fonctionnant correctement : **Nutella**. Pour ce produit, les informations environnementales (éco-score, alternatives) s'affichent correctement.
+   - Pour les produits moins courants ou récents, il est possible que l'API ne retourne aucune information.
+
+2. **Scanner un nouveau produit** :
+   - Si vous souhaitez scanner un autre produit après en avoir déjà scanné un, vous devez **rafraîchir la page** avant de lancer un nouveau scan.
+   - Cela réinitialise le scanner et permet d'éviter les conflits ou les erreurs d'affichage liées au précédent produit scanné.
+
 
 
 ## Références et Documentation
