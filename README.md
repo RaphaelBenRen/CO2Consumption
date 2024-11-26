@@ -16,8 +16,6 @@ Dans un contexte de prise de conscience écologique croissante, il est essentiel
 ### Contexte :
 Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur empreinte carbone en facilitant l'accès à des informations environnementales via une interface simple et intuitive.
 
----
-
 
 ### Dépendances
 
@@ -38,7 +36,6 @@ Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur 
 - **Efficacité Mémoire** :
   - Faible consommation de ressources grâce à l'utilisation de requêtes asynchrones.
 
----
 
 ### Améliorations Futures
 
@@ -47,7 +44,6 @@ Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur 
 
 - **Réduction de la Latence** :
   - Optimiser les requêtes API pour diminuer les temps de réponse.
-
 
 
 ## Utilisation
@@ -101,8 +97,7 @@ Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur 
 
 - **Calcul Plus Précis de l'Empreinte Carbone** :  
   Intégrer des API spécialisées pour affiner l'évaluation de l'empreinte carbone, en tenant compte de données supplémentaires.
-
----
+  
 
 ### Développement Futur
 - **Version Mobile** :  
