@@ -1,129 +1,139 @@
 # CO2 Consumption Scanner
 
-## Résultats et Aperçu du Projet
+## Results and Project Overview
 
-### Objectifs :
-Le **CO2 Consumption Scanner** est une application web permettant aux utilisateurs de scanner les codes-barres des produits et de consulter leur consommation de CO2 ainsi que d'autres informations environnementales comme l'éco-score. L'application propose également des alternatives plus écologiques pour les produits à forte empreinte carbone.
+### Objectives:
+The **CO2 Consumption Scanner** is a web application that allows users to scan product barcodes and view their CO2 consumption along with other environmental information like the eco-score. The application also suggests more eco-friendly alternatives for products with a high carbon footprint.
 
-### Motivation et Importance :
-Dans un contexte de prise de conscience écologique croissante, il est essentiel que les consommateurs puissent prendre des décisions éclairées concernant l'impact environnemental de leurs achats. Ce projet répond à cette demande en permettant un accès rapide aux informations écologiques des produits via un simple scan de code-barres.
+### Motivation and Importance:
+In the context of growing ecological awareness, it is essential for consumers to make informed decisions about the environmental impact of their purchases. This project addresses this need by providing quick access to environmental data through a simple barcode scan.
 
-### Résultats Attendus :
-- Permettre aux utilisateurs de scanner un code-barres via la caméra de leur appareil.
-- Afficher des informations sur la consommation de CO2 du produit, son éco-score, et son impact environnemental.
-- Suggérer des produits alternatifs plus écologiques lorsque nécessaire.
+### Expected Results:
+- Allow users to scan a barcode using their device's camera.
+- Display information about the product's CO2 consumption, eco-score, and environmental impact.
+- Suggest eco-friendly alternatives when necessary.
 
-  There's an example of the result expected : ![image](https://github.com/user-attachments/assets/e8d0fba6-319a-489c-af3b-f355c8f82c58)
+  Here's an example of the expected result:  
+  ![image](https://github.com/user-attachments/assets/e8d0fba6-319a-489c-af3b-f355c8f82c58)
 
-  if the product is not in the data base, there's a message : ![image](https://github.com/user-attachments/assets/36c1f5a5-276f-491a-90ba-1fbf4c445267)
- 
+  If the product is not in the database, a message is displayed:  
+  ![image](https://github.com/user-attachments/assets/36c1f5a5-276f-491a-90ba-1fbf4c445267)
 
+### Context:
+This project aims to raise consumer awareness about reducing their carbon footprint by making environmental information accessible through a simple and intuitive interface.
 
-### Contexte :
-Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur empreinte carbone en facilitant l'accès à des informations environnementales via une interface simple et intuitive.
+---
 
+## Dependencies
 
-### Dépendances
+- **QuaggaJS**: A JavaScript library for scanning barcodes via the camera.
+- **Open Food Facts API**: Provides data about food products, including their environmental impact, eco-score, and CO2 consumption.
 
-- **QuaggaJS** : Une bibliothèque JavaScript pour scanner les codes-barres via la caméra.
-- **Open Food Facts API** : Fournit des données sur les produits alimentaires, notamment sur l'impact environnemental, l'éco-score et la consommation de CO2.
+---
 
-## Mesures de Performance
+## Performance Metrics
 
-### Critères de Performance
+### Performance Criteria
 
-- **Précision du Scanner** : 
-  - Capable de lire les codes-barres EAN standards.
-  - Temps de détection moyen : **< 3 secondes** dans des conditions lumineuses normales.
+- **Scanner Accuracy**: 
+  - Capable of reading standard EAN barcodes.
+  - Average detection time: **< 3 seconds** under normal lighting conditions.
 
-- **Vitesse de l'API** :
-  - Temps moyen pour récupérer les données produit : **1 à 3 secondes** (variable selon la qualité de la connexion Internet).
+- **API Speed**:
+  - Average time to retrieve product data: **1 to 3 seconds** (depending on internet connection quality).
 
-- **Efficacité Mémoire** :
-  - Faible consommation de ressources grâce à l'utilisation de requêtes asynchrones.
+- **Memory Efficiency**:
+  - Low resource consumption thanks to asynchronous requests.
 
+---
 
-### Améliorations Futures
+### Future Improvements
 
-- **Optimisation de la Détection** :
-  - Améliorer la précision du scanner dans des environnements de faible luminosité ou avec des codes-barres mal imprimés.
+- **Detection Optimization**:
+  - Improve scanner accuracy in low-light environments or with poorly printed barcodes.
 
-- **Réduction de la Latence** :
-  - Optimiser les requêtes API pour diminuer les temps de réponse.
+- **Latency Reduction**:
+  - Optimize API requests to reduce response times.
 
+---
 
-## Utilisation
+## Usage
 
-1. **Ouvrez** la page `index.html` dans un navigateur moderne (par exemple, Chrome ou Firefox).
-2. **Cliquez** sur le bouton **Start Scanning** pour activer le scanner.
-3. **Placez** un produit avec un code-barres devant la caméra.
-4. **Visualisez** les informations du produit :
-   - Consommation de CO2.
-   - Éco-score.
-   - Alternatives proposées (si disponibles) pour un impact environnemental réduit.
+1. **Open** the `index.html` page in a modern browser (e.g., Chrome or Firefox).
+2. **Click** the **Start Scanning** button to activate the scanner.
+3. **Place** a product with a barcode in front of the camera.
+4. **View** the product information:
+   - CO2 consumption.
+   - Eco-score.
+   - Suggested alternatives (if available) for a reduced environmental impact.
 
-### Notes importantes :
+### Important Notes:
 
-1. **Compatibilité des produits** :
-   - Le projet utilise l'API Open Food Facts, qui ne contient pas toutes les données pour tous les produits.
-   - Certains produits ne seront pas reconnus ou afficheront des informations partielles.
-   - Exemple de produit fonctionnant correctement : **Nutella**. Pour ce produit, les informations environnementales (éco-score, alternatives) s'affichent correctement.
-   - Pour les produits moins courants ou récents, il est possible que l'API ne retourne aucune information.
+1. **Product Compatibility**:
+   - The project uses the Open Food Facts API, which does not contain data for all products.
+   - Some products may not be recognized or may display partial information.
+   - Example of a working product: **Nutella**. For this product, environmental information (eco-score, alternatives) is displayed correctly.
+   - For less common or newer products, the API may not return any data.
 
-2. **Scanner un nouveau produit** :
-   - Si vous souhaitez scanner un autre produit après en avoir déjà scanné un, vous devez **rafraîchir la page** avant de lancer un nouveau scan.
-   - Cela réinitialise le scanner et permet d'éviter les conflits ou les erreurs d'affichage liées au précédent produit scanné.
+2. **Scanning Another Product**:
+   - To scan a new product after already scanning one, you must **refresh the page** before starting a new scan.
+   - This resets the scanner and avoids conflicts or display errors from the previously scanned product.
 
+---
 
+## References and Documentation
 
-## Références et Documentation
+- **QuaggaJS**: [Official Documentation](https://github.com/serratus/quaggaJS)  
+  Library used for barcode scanning.
 
-- **QuaggaJS** : [Documentation officielle](https://github.com/serratus/quaggaJS)  
-  Librairie utilisée pour scanner les codes-barres.
+- **Open Food Facts API**: [Product Database](https://world.openfoodfacts.org/data)  
+  API used to retrieve environmental information about products.
 
-- **Open Food Facts API** : [Base de données produits](https://world.openfoodfacts.org/data)  
-  API utilisée pour récupérer les informations environnementales des produits.
+- **CO2 Calculation Algorithm**:
+  - Based on the eco-score returned by the Open Food Facts API.
+  - A logarithmic transformation is applied to estimate CO2 consumption.
 
-- **Algorithme de Calcul du CO2** :
-  - Basé sur l'éco-score retourné par l'API Open Food Facts.
-  - Une transformation logarithmique est appliquée pour estimer la consommation de CO2.
+---
 
+## Issues and Contributions
 
-## Problèmes et Contributions
+### Known Issues
+- **Reading Difficulties**: 
+  - Poorly printed barcodes or scans in poorly lit environments may cause problems.
+- **Incomplete Data**:
+  - Some information may be missing for less common or recently added products.
 
-### Problèmes Connus
-- **Difficultés de Lecture** : 
-  - Les codes-barres mal imprimés ou scannés dans des environnements mal éclairés peuvent poser problème.
-- **Données Incomplètes** :
-  - Certaines informations sur les produits peu communs ou récemment ajoutés peuvent être manquantes.
-
-### Comment Contribuer
-1. **Signalez les Bugs** : Utilisez les issues GitHub pour signaler les problèmes rencontrés.
-2. **Ajoutez des Améliorations** : Proposez de nouvelles fonctionnalités ou optimisez les performances du projet.
-3. **Forkez le Projet** :
+### How to Contribute
+1. **Report Bugs**: Use GitHub issues to report any problems encountered.
+2. **Add Improvements**: Suggest new features or optimize project performance.
+3. **Fork the Project**:
    ```bash
    git fork https://github.com/your-username/CO2Consumption.git
 
-
-## Travaux Futurs
-
-### Améliorations Potentielles
-- **Précision du Scanner** :  
-  Développer des algorithmes plus robustes pour améliorer la lecture dans des conditions difficiles, notamment en cas de faible luminosité ou pour des codes endommagés.
-
-- **Base de Données Étendue** :  
-  Ajouter davantage de produits à la base de données, avec des informations détaillées sur leur impact environnemental pour une meilleure couverture.
-
-- **Calcul Plus Précis de l'Empreinte Carbone** :  
-  Intégrer des API spécialisées pour affiner l'évaluation de l'empreinte carbone, en tenant compte de données supplémentaires.
   
 
-### Développement Futur
-- **Version Mobile** :  
-  Créer une application mobile dédiée pour offrir une expérience utilisateur optimisée et adaptée aux petits écrans, avec des performances améliorées sur les appareils mobiles.
+## Future Work
 
-- **Recommandations Personnalisées** :  
-  Implémenter une fonctionnalité permettant de proposer des suggestions basées sur les préférences écologiques des utilisateurs, avec la possibilité de sauvegarder leurs produits favoris pour un accès rapide.
+### Potential Improvements
+
+- **Scanner Accuracy**:  
+  Develop more robust algorithms to improve barcode reading in difficult conditions, such as low light or damaged barcodes.
+
+- **Expanded Database**:  
+  Add more products to the database with detailed environmental impact information for broader coverage.
+
+- **More Accurate Carbon Footprint Calculation**:  
+  Integrate specialized APIs to provide a more granular evaluation of the carbon footprint.
+
+
+## Future Development
+
+- **Mobile Version**:  
+  Create a dedicated mobile application to provide an optimized user experience for smaller screens, with improved performance on mobile devices.
+
+- **Personalized Recommendations**:  
+  Implement a feature to suggest products based on users' ecological preferences, with the ability to save their favorite products for quick access.
+
 
 
 
