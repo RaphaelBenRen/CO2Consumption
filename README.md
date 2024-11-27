@@ -13,6 +13,12 @@ Dans un contexte de prise de conscience écologique croissante, il est essentiel
 - Afficher des informations sur la consommation de CO2 du produit, son éco-score, et son impact environnemental.
 - Suggérer des produits alternatifs plus écologiques lorsque nécessaire.
 
+  There's an example of the result expected : ![image](https://github.com/user-attachments/assets/e8d0fba6-319a-489c-af3b-f355c8f82c58)
+
+  if the product is not in the data base, there's a message : ![image](https://github.com/user-attachments/assets/36c1f5a5-276f-491a-90ba-1fbf4c445267)
+ 
+
+
 ### Contexte :
 Ce projet a pour but de sensibiliser les consommateurs à la réduction de leur empreinte carbone en facilitant l'accès à des informations environnementales via une interface simple et intuitive.
 
